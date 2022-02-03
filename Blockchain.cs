@@ -1,6 +1,6 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 
 namespace ShanOS {
     /// <summary>
@@ -66,7 +66,9 @@ namespace ShanOS {
         /// <returns>true if the blockchain is valid, else returns false</returns>
         public bool IsValid () {
             for (var i = 1; i < chain.Count; i++) {
+                // Current Block
                 Block currentBlock = chain[i];
+                // Previous Block
                 Block previousBlock = chain[i - 1];
 
                 if (currentBlock.CurrentHash != GenerateHash (currentBlock.ToString ())) {
@@ -88,6 +90,7 @@ namespace ShanOS {
             // Means the Block is Good - Validation must PASS
             return true;
         }
+
         /// <summary>
         /// To Print the Entire BlockChain, including the Geneisis Block.
         /// </summary>
