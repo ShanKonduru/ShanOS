@@ -41,6 +41,10 @@ namespace ShanOS {
         /// <value>unsigned long integer</value>
         private UInt64 Nonce { get; set; }
 
+        /// <summary>
+        /// Method to convert the entire Block content into a String
+        /// </summary>
+        /// <returns>Block contents in a String</returns>
         override public string ToString () {
             return string.Format ("{0}{1}{2}{3}",
                 this.Index,
@@ -48,6 +52,11 @@ namespace ShanOS {
                 this.Data,
                 this.Nonce);
         }
+
+        /// <summary>
+        /// Method to print the entire Block contents
+        /// </summary>
+        /// <returns>Block contents in a String</returns>
         public string ToPrint () {
             return string.Format (
                 "Index: {0}\r\nTime Stamp: {1}\r\nData: {2}\r\nPrevious Hash: {3}\r\nCurrent Hash: {4}\r\nNonce :{5}",
@@ -59,6 +68,12 @@ namespace ShanOS {
                 this.Nonce);
         }
 
+        /// <summary>
+        /// Constructor for Block Class
+        /// </summary>
+        /// <param name="index">index number of the block getting created</param>
+        /// <param name="data">data preserved in the block</param>
+        /// <param name="previousHash">previous hash value</param>
         public Block (UInt64 index, string data, string previousHash = null) {
             // Assign Index
             this.Index = index;
