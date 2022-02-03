@@ -3,7 +3,12 @@
 namespace ShanOS {
     class Program {
         static void Main (string[] args) {
-            Blockchain chain = new Blockchain ();
+            /// <summary>
+            /// Change this Difficulty number to increase the time to insert a new block into main network
+            /// </summary>
+            int difficulty = 1;
+
+            Blockchain chain = new Blockchain (difficulty);
 
             UInt64 index = 1;
             Block b1 = new Block (index++, "First Block");
@@ -16,8 +21,8 @@ namespace ShanOS {
 
             chain.ToPrint ();
             Console.WriteLine (chain.IsValid ());
-            b2.Data = "I am a Hacker!!! ";
 
+            b2.Data = "I am a Hacker!!! ";
             chain.ToPrint ();
             Console.WriteLine (chain.IsValid ());
         }
