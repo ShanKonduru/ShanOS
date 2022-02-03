@@ -5,14 +5,14 @@ namespace ShanOS {
         public DateTime TimeStamp { get; set; }
         public string Data { get; set; }
         public string PreviousHash { get; set; }
-        public string CurrentHash { get; private set; }
+        public string CurrentHash { get; set; }
 
         private UInt64 Nonce { get; set; }
 
         override public string ToString () {
             return string.Format ("{0}{1}{2}{3}",
                 this.Index,
-                this.TimeStamp.ToString ("yyyyddMMhhmmss"),
+                this.TimeStamp.ToString (DATE_TIME_FORMAT),
                 this.Data,
                 this.Nonce);
         }
@@ -20,7 +20,7 @@ namespace ShanOS {
             return string.Format (
                 "Index: {0}\r\nTime Stamp: {1}\r\nData: {2}\r\nPrevious Hash: {3}\r\nCurrent Hash: {4}\r\nNonce :{5}",
                 this.Index,
-                this.TimeStamp.ToString ("yyyyddMMhhmmss"),
+                this.TimeStamp.ToString (DATE_TIME_FORMAT),
                 this.Data,
                 this.PreviousHash,
                 this.CurrentHash,
@@ -31,7 +31,11 @@ namespace ShanOS {
             this.Index = index;
             this.TimeStamp = DateTime.Now;
             this.Data = data;
-            this.PreviousHash = string.Empty;
+            if (index == 0) {
+                this.PreviousHash = string.Empty;
+            } else {
+                this.PreviousHash = GenerateHash (this.ToString ());
+            }
             this.CurrentHash = GenerateHash (this.ToString ());
             this.Nonce = 0;
         }

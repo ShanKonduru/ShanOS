@@ -8,7 +8,7 @@ namespace ShanOS {
             var hash = new System.Text.StringBuilder ();
             byte[] crypto = crypt.ComputeHash (Encoding.UTF8.GetBytes (randomString));
             foreach (byte theByte in crypto) {
-                hash.Append (theByte.ToString ());
+                hash.Append (theByte.ToString ("X"));
             }
             return hash.ToString ();
         }
