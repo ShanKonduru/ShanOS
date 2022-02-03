@@ -1,6 +1,9 @@
 using System;
 
 namespace ShanOS {
+    /// <summary>
+    /// Transaction Class
+    /// </summary>
     public class Transaction {
         /// <summary>
         /// From Address, The address of the person who initiated this transaction.

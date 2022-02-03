@@ -1,12 +1,15 @@
 ﻿using System;
 
 namespace ShanOS {
-    class Program {
+    /// <summary>
+    /// Program Entry
+    /// </summary>
+    public class Program {
         static void Main (string[] args) {
             /// <summary>
             /// Change this Difficulty number to increase the time to insert a new block into main network
             /// </summary>
-            int difficulty = 1;
+            int difficulty = 0;
 
             Blockchain chain = new Blockchain (difficulty);
 
@@ -19,10 +22,6 @@ namespace ShanOS {
             Console.WriteLine (b2.ToPrint ());
             chain.AddBlock (b2);
 
-            chain.ToPrint ();
-            Console.WriteLine (chain.IsValid ());
-
-            b2.Data = "I am a Hacker!!! ";
             chain.ToPrint ();
             Console.WriteLine (chain.IsValid ());
         }
