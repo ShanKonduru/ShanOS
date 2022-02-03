@@ -1,0 +1,13 @@
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.exe
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.deps.json
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.runtimeconfig.json
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.runtimeconfig.dev.json
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.dll
+C:\ShanOS\bin\Debug\netcoreapp3.1\ShanOS.pdb
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.csprojAssemblyReference.cache
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.AssemblyInfoInputs.cache
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.AssemblyInfo.cs
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.csproj.CoreCompileInputs.cache
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.dll
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.pdb
+C:\ShanOS\obj\Debug\netcoreapp3.1\ShanOS.genruntimeconfig.cache
