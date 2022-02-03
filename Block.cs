@@ -18,11 +18,27 @@ namespace ShanOS {
         /// <summary>
         /// Data can be a Simple string or a Complex Transaction Object
         /// </summary>
-        /// <value></value>
+        /// <value>string or a complex object</value>
         public string Data { get; set; }
+
+        /// <summary>
+        /// Previous Hash string (HexaDecimal) string 
+        /// Address of Previous Block
+        /// </summary>
+        /// <value>HexaDecimal string </value>
         public string PreviousHash { get; set; }
+
+        /// <summary>
+        /// Current Hash string (HexaDecimal) string 
+        /// Address of Current Block
+        /// </summary>
+        /// <value>HexaDecimal string </value>
         public string CurrentHash { get; set; }
 
+        /// <summary>
+        /// Nonce is rather calculated by counting the number of transactions sent from an address.
+        /// </summary>
+        /// <value>unsigned long integer</value>
         private UInt64 Nonce { get; set; }
 
         override public string ToString () {
@@ -66,6 +82,25 @@ namespace ShanOS {
 
             // Always Generate Hash based on This Object
             this.CurrentHash = GenerateHash (this.ToString ());
+
+        }
+
+        /// <summary>
+        /// Add Block to Blockchain.
+        /// This Method mines the block before adding it to Blockchain.
+        /// </summary>
+        /// <param name="blockToAdd">Block object to be added to Blockchain</param>
+        public void MineNewBlock (int  difficulty) {
+            if (difficulty > 0) {
+                while (this.CurrentHash.Substring (0, difficulty) !=
+                    string.Empty.PadLeft (difficulty, '0')) {
+                    this.Nonce++;
+                    this.CurrentHash = GenerateHash (this.ToString ());
+                }
+            } else {
+                this.CurrentHash = GenerateHash (this.ToString ());
+            }
+            // Console.WriteLine ("Block Mined : {0}", this.CurrentHash);
         }
     }
 }
