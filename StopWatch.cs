@@ -47,7 +47,12 @@ namespace ShanOS.Utilities {
         /// <param name="milliseconds">input milliseconds</param>
         /// <returns>returns time span in human readable format</returns>
         public static string ToConvertString (long milliseconds) {
-            return string.Format (new TimeSpan (milliseconds).ToString ());
+            int days = (int) TimeSpan.FromMilliseconds (milliseconds).TotalDays;
+            int hours = (int) TimeSpan.FromMilliseconds (milliseconds).TotalHours;
+            int minutes = (int) TimeSpan.FromMilliseconds (milliseconds).TotalMinutes;
+            int seconds = (int) TimeSpan.FromMilliseconds (milliseconds).TotalSeconds;
+            return string.Format ("Days: {0} Hours :{1} Minutes :{2} Seconds :{3}", days, hours, minutes, seconds);
+            // return string.Format (new TimeSpan (milliseconds).ToString ());
         }
     }
 }

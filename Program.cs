@@ -12,9 +12,10 @@ namespace ShanOS {
             /// <summary>
             /// Change this Difficulty number to increase the time to insert a new block into main network
             /// </summary>
-            int difficulty = 0;
+            int mindifficulty = 0;
+            int maxdifficulty = mindifficulty;
 
-            for (difficulty = 0; difficulty <= 5; difficulty++) {
+            for (int difficulty = mindifficulty; difficulty <= maxdifficulty; difficulty++) {
 
                 // Initialize StopWatch to get elapsed Time
                 string guid = StopWatch.StartTimer ();
