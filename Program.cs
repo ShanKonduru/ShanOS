@@ -13,7 +13,7 @@ namespace ShanOS {
             /// Change this Difficulty number to increase the time to insert a new block into main network
             /// </summary>
             int mindifficulty = 0;
-            int maxdifficulty = mindifficulty;
+            int maxdifficulty = 4;
 
             for (int difficulty = mindifficulty; difficulty <= maxdifficulty; difficulty++) {
 
@@ -40,15 +40,18 @@ namespace ShanOS {
                 chain.AddBlock (b2);
 
                 // To Print the Blockchain contents
-                if (DEBUG_PRINT) {
+                // if (DEBUG_PRINT) {
                     chain.ToPrint ();
-                }
+                // }
+
                 // To validate of the Blockchain is valid
-                if (DEBUG_PRINT) {
+                // if (DEBUG_PRINT) {
                     Console.WriteLine (chain.IsValid ());
-                }
+                // }
+
                 long milliseconds = StopWatch.StopTimer (guid);
                 Console.WriteLine ("With difficulty: [{0}] Total Time taken to process : [{1}]", difficulty, StopWatch.ToConvertString (milliseconds));
+                Console.WriteLine ("***********************************************************************");
             }
         }
     }

@@ -47,12 +47,24 @@ namespace ShanOS.Utilities {
         /// <param name="milliseconds">input milliseconds</param>
         /// <returns>returns time span in human readable format</returns>
         public static string ToConvertString (long milliseconds) {
-            int days = (int) TimeSpan.FromMilliseconds (milliseconds).TotalDays;
-            int hours = (int) TimeSpan.FromMilliseconds (milliseconds).TotalHours;
-            int minutes = (int) TimeSpan.FromMilliseconds (milliseconds).TotalMinutes;
-            int seconds = (int) TimeSpan.FromMilliseconds (milliseconds).TotalSeconds;
-            return string.Format ("Days: {0} Hours :{1} Minutes :{2} Seconds :{3}", days, hours, minutes, seconds);
-            // return string.Format (new TimeSpan (milliseconds).ToString ());
+            long years = (long) milliseconds / 31536000000;
+            milliseconds = milliseconds - years * 31536000000;
+
+            long days = (long) milliseconds / 86400000;
+            milliseconds = milliseconds - days * 86400000;
+
+            long hours = (long) milliseconds / 3600000;
+            milliseconds = milliseconds - hours * 3600000;
+
+            long minutes = (long) milliseconds / 60000;
+            milliseconds = milliseconds - minutes * 60000;
+
+            long seconds = (long) milliseconds / 1000;
+            milliseconds = milliseconds - seconds * 1000;
+
+            Console.WriteLine (
+                string.Format ("Years: {0} Days: {1} Hours :{2} Minutes :{3} Seconds :{4} Milliseconds: {5}", years, days, hours, minutes, seconds, milliseconds));
+            return string.Format ("Years: {0} Days: {1} Hours :{2} Minutes :{3} Seconds :{4} Milliseconds: {5}", years, days, hours, minutes, seconds, milliseconds);;
         }
     }
 }
