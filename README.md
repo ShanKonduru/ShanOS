@@ -11,7 +11,7 @@ To find out more about me please visit:
 
 [Discord](https://discord.gg/tm6ET8Fy)
 
-[Instagram] (https://www.instagram.com/shankonduru/)
+[Instagram](https://www.instagram.com/shankonduru/)
 
 [Twitter](https://twitter.com/ShanKonduru)
 
