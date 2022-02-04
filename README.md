@@ -28,8 +28,10 @@ git clone https://github.com/ShanKonduru/ShanOS
 Create your own blockchain and own bitcoin using C#.net programming language and Visual Studi Code IDE.
 
 ## Build
-'''sh
+```sh
 dotnet build 
-'''
+```
 ## Run
+```sh
 dotnet run
+```
