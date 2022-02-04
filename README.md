@@ -40,25 +40,103 @@ dotnet run
 ## Output
 ```sh
 Index: 0
-Time Stamp: 20220402071401
+Time Stamp: 20220502122211
 Data: Genesis Block
 Previous Hash: NULL
-Current Hash: 7F977DF44DCB206C6076D6B274CE9BEFC54BBFA3B518DCB4B35D29A20485090
+Current Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
 Nonce :0
 ------------------------------------------
 Index: 1
-Time Stamp: 20220402071401
+Time Stamp: 20220502122211
 Data: First Block
-Previous Hash: 7F977DF44DCB206C6076D6B274CE9BEFC54BBFA3B518DCB4B35D29A20485090
-Current Hash: E68DBBFD84EC9E806A265D36827A70F02A36D6B27CDFC6ED83E85D4F10485B60
+Previous Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Current Hash: 579CE1A7B1B0ED4135D7A3802D6123792F3D77F58BC29BE7ECEEBFED22C67B
 Nonce :0
 ------------------------------------------
 Index: 2
-Time Stamp: 20220402071401
+Time Stamp: 20220502122211
 Data: First Block
-Previous Hash: E68DBBFD84EC9E806A265D36827A70F02A36D6B27CDFC6ED83E85D4F10485B60
-Current Hash: D5F82B8E29EC715D53C653FF47F23F1010D276D27082AF3F9E875FAB46E14
+Previous Hash: 579CE1A7B1B0ED4135D7A3802D6123792F3D77F58BC29BE7ECEEBFED22C67B
+Current Hash: 388224DCC48E926726E041FA8D52F64C70C7CE36B88AE57BCDB713EE41BB8052
 Nonce :0
 ------------------------------------------
-With difficulty: [0] Total Time taken to process : [Days: 0 Hours :0 Minutes :0 Seconds :0]
+True
+Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 22
+With difficulty: [0] Total Time taken to process : [Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 22]
+***********************************************************************
+Index: 0
+Time Stamp: 20220502122211
+Data: Genesis Block
+Previous Hash: NULL
+Current Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Nonce :0
+------------------------------------------
+Index: 1
+Time Stamp: 20220502122211
+Data: First Block
+Previous Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Current Hash: 0604611938B8686E17AFEFFF0BE692F32823AAAB81B3BEC34E1BD431BAC
+Nonce :260
+------------------------------------------
+Index: 2
+Time Stamp: 20220502122211
+Data: First Block
+Previous Hash: 0604611938B8686E17AFEFFF0BE692F32823AAAB81B3BEC34E1BD431BAC
+Current Hash: 03FC323955BD57CFBB84714C7E3F47AFCF25D45AA1097DD26A7BDBBC6A11F
+Nonce :90
+------------------------------------------
+True
+Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 6
+With difficulty: [1] Total Time taken to process : [Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 6]
+***********************************************************************
+Index: 0
+Time Stamp: 20220502122211
+Data: Genesis Block
+Previous Hash: NULL
+Current Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Nonce :0
+------------------------------------------
+Index: 1
+Time Stamp: 20220502122211
+Data: First Block
+Previous Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Current Hash: 00AB55562FBE5C8A6CCAE4A694328D41B3381ACB6F49FBC1B32F9EA9D1213
+Nonce :114078
+------------------------------------------
+Index: 2
+Time Stamp: 20220502122211
+Data: First Block
+Previous Hash: 00AB55562FBE5C8A6CCAE4A694328D41B3381ACB6F49FBC1B32F9EA9D1213
+Current Hash: 00E690D8274FF6CB15C42BC42B42FE5C6F2873393F4092A5C2DEC2C9FF29
+Nonce :37487
+------------------------------------------
+True
+Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 581
+With difficulty: [2] Total Time taken to process : [Years: 0 Days: 0 Hours :0 Minutes :0 Seconds :0 Milliseconds: 581]
+***********************************************************************
+Index: 0
+Time Stamp: 20220502122211
+Data: Genesis Block
+Previous Hash: NULL
+Current Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Nonce :0
+------------------------------------------
+Index: 1
+Time Stamp: 20220502122211
+Data: First Block
+Previous Hash: F5EAFE2A03661518DA184BE3ABF264EDEDD75CFD1D1C993A12853234CBB
+Current Hash: 000F8378B10DA11B7CBE76B45BE57783A80BE236C0B5FD2BB0DC1BAA3FCE
+Nonce :4772566
+------------------------------------------
+Index: 2
+Time Stamp: 20220502122229
+Data: First Block
+Previous Hash: 000F8378B10DA11B7CBE76B45BE57783A80BE236C0B5FD2BB0DC1BAA3FCE
+Current Hash: 0002158F9FE248ED67DC532092269CA8EBF9978410F26AAD428B2ADE9E74
+Nonce :86688313
+------------------------------------------
+True
+Years: 0 Days: 0 Hours :0 Minutes :5 Seconds :16 Milliseconds: 258
+With difficulty: [3] Total Time taken to process : [Years: 0 Days: 0 Hours :0 Minutes :5 Seconds :16 Milliseconds: 258]
+***********************************************************************
 ```
