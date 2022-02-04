@@ -37,3 +37,28 @@ dotnet build
 ```sh
 dotnet run
 ```
+## Output
+```sh
+Index: 0
+Time Stamp: 20220402071401
+Data: Genesis Block
+Previous Hash: NULL
+Current Hash: 7F977DF44DCB206C6076D6B274CE9BEFC54BBFA3B518DCB4B35D29A20485090
+Nonce :0
+------------------------------------------
+Index: 1
+Time Stamp: 20220402071401
+Data: First Block
+Previous Hash: 7F977DF44DCB206C6076D6B274CE9BEFC54BBFA3B518DCB4B35D29A20485090
+Current Hash: E68DBBFD84EC9E806A265D36827A70F02A36D6B27CDFC6ED83E85D4F10485B60
+Nonce :0
+------------------------------------------
+Index: 2
+Time Stamp: 20220402071401
+Data: First Block
+Previous Hash: E68DBBFD84EC9E806A265D36827A70F02A36D6B27CDFC6ED83E85D4F10485B60
+Current Hash: D5F82B8E29EC715D53C653FF47F23F1010D276D27082AF3F9E875FAB46E14
+Nonce :0
+------------------------------------------
+With difficulty: [0] Total Time taken to process : [Days: 0 Hours :0 Minutes :0 Seconds :0]
+```
