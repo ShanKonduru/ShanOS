@@ -11,7 +11,7 @@ To find out more about me please visit:
 
 [Discord](https://discord.gg/tm6ET8Fy)
 
-[Instagram] (https://www.instagram.com/shankonduru/)
+[Instagram](https://www.instagram.com/shankonduru/)
 
 [Twitter](https://twitter.com/ShanKonduru)
 
@@ -29,7 +29,8 @@ git clone https://github.com/ShanKonduru/ShanOS
 Create your own blockchain and own bitcoin using C#.net programming language and Visual Studi Code IDE.
 
 ## Build
+'''sh
 dotnet build 
-
+'''
 ## Run
 dotnet run
