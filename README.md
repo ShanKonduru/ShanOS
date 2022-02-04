@@ -21,7 +21,9 @@ To find out more about me please visit:
 Create your own Blockchain and own Cryptocurrency by using C#.NET language
 
 ## Installation
+```sh
 git clone https://github.com/ShanKonduru/ShanOS
+```
 
 ## Usage
 
