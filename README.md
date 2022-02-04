@@ -1,7 +1,6 @@
 # Welcome to ShanOS
 
-Important: There is a new repo for this code.
-[https://github.com/ShanKonduru/ShanOS)
+Important: There is a new repo for this code.[at](https://github.com/ShanKonduru/ShanOS)
 
 All the code in these repos was created and explained by Shan Konduru.
 
