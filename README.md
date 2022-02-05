@@ -139,4 +139,29 @@ True
 Years: 0 Days: 0 Hours :0 Minutes :5 Seconds :16 Milliseconds: 258
 With difficulty: [3] Total Time taken to process : [Years: 0 Days: 0 Hours :0 Minutes :5 Seconds :16 Milliseconds: 258]
 ***********************************************************************
+Index: 0
+Time Stamp: 20220502122728
+Data: Genesis Block
+Previous Hash: NULL
+Current Hash: B64E44FCE1F4BACDD967A49F171796F96E766FF5EB34E4CC53AB281545DB
+Nonce :0
+------------------------------------------
+Index: 1
+Time Stamp: 20220502122728
+Data: First Block
+Previous Hash: B64E44FCE1F4BACDD967A49F171796F96E766FF5EB34E4CC53AB281545DB
+Current Hash: 0000402F9ED7C9A5E3ED784A554BBE7B35421D766EF13E95DB61725D44
+Nonce :7163024320
+------------------------------------------
+Index: 2
+Time Stamp: 20220502071851
+Data: First Block
+Previous Hash: 0000402F9ED7C9A5E3ED784A554BBE7B35421D766EF13E95DB61725D44
+Current Hash: 0000CB42F50979C7F4DE067F797A6335476A053E1E155D866E388D2E27
+Nonce :994897914
+------------------------------------------
+True
+Years: 0 Days: 0 Hours :7 Minutes :47 Seconds :14 Milliseconds: 275
+With difficulty: [4] Total Time taken to process : [Years: 0 Days: 0 Hours :7 Minutes :47 Seconds :14 Milliseconds: 275]
+***********************************************************************
 ```
